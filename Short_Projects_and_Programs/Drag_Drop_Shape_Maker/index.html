@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop Shape Maker</title>
+</head>
+
+<script src="source_shape_maker.js"></script>
+
+<!--<body onload="draw()">-->
+<body>
+<canvas id="canvas" width="800" height="500" style="border: 1px solid black"></canvas>
+<script src="source_shape_maker.js"></script>
+
+
+<div id="Shape_buttons">
+    <button type="button" id="Circle" onclick="drawCircle()">Circle</button>
+    <button type="button" id="Line" onclick="drawLine()">Line</button>
+    <button type="button" id="Rectangle" onclick="drawRectangle()">Rectangle</button>
+    <button type="button" id="Triangle" onclick="drawTriangle()">Triangle</button>
+    <button type="button" id="Polygon" onclick="drawPolygon()">Polygon</button>
+</div>
+
+<!--<div id="Function_buttons">-->
+<!--    <button type="button" id="Scale" onclick="scaleShape()">Scale</button>-->
+<!--    <button type="button" id="Rotate" onclick="rotateShape()">Rotate</button>-->
+<!--    <button type="button" id="Translate" onclick="translateShape()">Translate</button>-->
+<!--    <button type="button" id="ClearTrans" onclick="clearTransformation()">Clear Transformation</button>-->
+<!--</div>-->
+<div id="clear_buttons">
+    <button type="button" id="Clear" onclick="clearShape()">Clear Window</button>
+</div>
+
+</body>
+</html>
