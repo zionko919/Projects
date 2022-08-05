@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.55f2c41b.chunk.css",
+    "main.js": "/static/js/main.839f8423.chunk.js",
+    "main.js.map": "/static/js/main.839f8423.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5613a368.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5613a368.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.a7d18609.chunk.js": "/static/js/2.a7d18609.chunk.js",
+    "static/js/2.a7d18609.chunk.js.map": "/static/js/2.a7d18609.chunk.js.map",
+    "static/js/3.1dac2533.chunk.js": "/static/js/3.1dac2533.chunk.js",
+    "static/js/3.1dac2533.chunk.js.map": "/static/js/3.1dac2533.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.55f2c41b.chunk.css.map": "/static/css/main.55f2c41b.chunk.css.map",
+    "static/js/2.a7d18609.chunk.js.LICENSE.txt": "/static/js/2.a7d18609.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/snowboarder.92e7ac84.jpg",
+    "static/media/trailmapCrotchedMountain.png": "/static/media/trailmapCrotchedMountain.e07a6360.png",
+    "static/media/trailmapLoonMountain.png": "/static/media/trailmapLoonMountain.c00de55c.png",
+    "static/media/trailmapNashoba.jpg": "/static/media/trailmapNashoba.e4ed2876.jpg",
+    "static/media/trailmapPatsPeak.jpg": "/static/media/trailmapPatsPeak.9a75d3f0.jpg",
+    "static/media/trailmapWachusett.jpg": "/static/media/trailmapWachusett.98b4c38d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5613a368.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.a7d18609.chunk.js",
+    "static/css/main.55f2c41b.chunk.css",
+    "static/js/main.839f8423.chunk.js"
+  ]
+}
