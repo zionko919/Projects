@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <title>Project Simple Paint Board - Zion Ko</title>
+</head>
+<body>
+<div>
+  <canvas id="canvas" width="1080" height="720" style="border-style: solid;">
+    Oops ... your browser doesn't support the HTML5 canvas element
+  </canvas>
+
+  <div id="select_button">
+    <button type="button" id="Move" onclick="moveShape()">Move</button>
+    <button type="button" id="Rotate" onclick="rotateShape()">Rotate</button>
+    <button type="button" id="Scale" onclick="scaleShape()">Scale</button>
+    <button type="button" id="ChangeCurvature" onclick="changeCurvature()">Curvature</button>
+
+  </div>
+  <div><br></div>
+  <div id="Shape_buttons">
+    <button type="button" id="Circle" onclick="drawCircle()">Circle</button>
+    <button type="button" id="Ellipse" onclick="drawEllipse()">Ellipse</button>
+    <button type="button" id="Rectangle" onclick="drawRectangle()">Rectangle</button>
+    <button type="button" id="Square" onclick="drawSquare()">Square</button>
+    <button type="button" id="Triangle" onclick="drawTriangle()">Triangle</button>
+    <button type="button" id="Polygon" onclick="drawPolygon()">Polygon</button>
+    <label for="numPoly"># of sides: </label><input id="numPoly" type="number" step="1" value="5">
+  </div>
+  <div><br></div>
+  <div id="Line_buttons">
+    <button type="button" id="Line" onclick="drawStrLine()">Line</button>
+    <button type="button" id="Curve" onclick="drawCurve()">Curve</button>
+    <button type="button" id="PolyLine" onclick="drawPolyLine()">Poly-Line</button>
+  </div>
+  <div><br></div>
+  <div id="clear_buttons">
+    <button type="button" id="Refresh" onclick="reloadPage()">Reload</button>
+    <button type="button" id="Undo" onclick="undo()">Undo</button>
+    <button type="button" id="Redo" onclick="redo()">Redo</button>
+  </div>
+  <div><br></div>
+  <div id="other_buttons">
+    <button id="save">Save JSON</button>
+    <div><br></div>
+    Load JSON: <input type="file" id="load">
+    <div><br></div>
+    <a download="canvas.jpeg" href="" onclick="downloadCanvas(this);">Download Canvas.jpeg</a>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="new.js"></script>
+<!--<script type="text/javascript" src="Common/webgl-utils.js"></script>-->
+<!--<script type="text/javascript" src="Common/initShaders.js"></script>-->
+<!--<script type="text/javascript" src="Common/MV.js"></script>-->
+</html>
+
+
+
