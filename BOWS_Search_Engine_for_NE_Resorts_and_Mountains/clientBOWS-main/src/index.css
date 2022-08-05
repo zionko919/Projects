@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+p.aboutme {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  background: lightgray;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 100; 
+  margin-right: 0%;
+  margin-left: 0%;
+  border: 2px solid white;
+}
+
+p.homepage {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+
+p.contact {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+
+p.mountainfinder {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.background {
+  background-image: url('images/snowboarder.jpg');
+  position: fixed;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+}
+
+.backgrounderror {
+  background-image: url('images/notfoundpage.png');
+  position: fixed;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+}
+
+.searchbar {
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: medium;
+}
+
+.searchbutton {
+  border: none;
+  background-color: rgb(39, 108, 199);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.forms {
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: x-large;
+}
+
+.content {
+padding-bottom: 10rem;
+}
+
+footer {
+  background-color: #000;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  color: #ccc;
+}
+
+form{
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display:block;
+  font-size: x-large;
+}
+
+.form-group{
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea{
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+#status{
+  width:90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+
+}
+
+#status.success{
+  background-color: green;
+}
+
+.box{
+  padding: 2%;
+}
+
+.weatherBox{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid black;
+  background-color: lightgray;
+}
+
+.tabBox {
+  min-height: 50%;
+  min-width: 100%;
+}
+
+.sortBy{
+  padding: 10px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.lblSortBy {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: small;
+}
+
+.btnSortBy {
+  min-width: 10%;
+}
+
+.lblCompare {
+  padding-right: 5px;
+  font-size: small;
+}
+
+.btnCompare {
+  min-width: 10%;
+  padding-right: 5px;
+}
