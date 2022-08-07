@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mathmatical Algorithms for Shapes and Lines</title>
+    </head>
+    <body>
+        <h1>Mathmatical Algorithms for Shapes and Lines</h1>
+        <canvas id="my_canvas" width="400" height="400" style="border:1px solid black;">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas> <br>
+        <script src="shapes_lines_algorithms.js"></script>
+        <button id="refresh" onclick="location.reload()">Reset</button><br>
+        <h3>DDA/Midpoint Line:</h3>
+        <p style="color: dodgerblue">&nbsp
+            <label for="l_X1">&nbsp;&nbsp;Start - x1: </label><input id="l_X1" type="number" step="1" value="">
+            <label for="l_Y1">&nbsp;&nbsp;y1: </label><input id="l_Y1" type="number" step="1" value="">
+        </p>
+        <p style="color: green">&nbsp
+            <label for="l_X2">&nbsp;&nbsp;End - x2: </label><input id="l_X2" type="number"  step="1" value="">
+            <label for="l_Y2">&nbsp;&nbsp;y2: </label><input id="l_Y2" type="number"  step="1" value="">
+        </p>
+        <button id="create_DDA_line" onclick="DDA()">Create DDA Line</button>
+        <button id="create_MP_line" onclick="MP_line()">Create Midpoint Line</button><br>
+        <br>
+
+        <h3>Midpoint Circle:</h3>
+        <p style="color: dodgerblue"> &nbsp;
+            <label for="cir_X">&nbsp;&nbsp;Center Coordinates x1: </label><input id="cir_X" type="number" step="1" value="">
+            <label for="cir_Y">&nbsp;&nbsp;y1: </label><input id="cir_Y" type="number" step="1" value="">
+            <label for="cir_R">&nbsp;&nbsp;radius: </label><input id="cir_R" type="number" step="1" value="">
+        </p>
+        <button id="create_MP_Circle" onclick="mp_circle()">Create Circle</button><br>
+        <br>
+
+        <h3>Midpoint Ellipse:</h3>
+        <p style="color: dodgerblue"> &nbsp;
+            <label for="ell_X">&nbsp;&nbsp;Center Coordinates - x1: </label><input id="ell_X" type="number" step="1" value="">
+            <label for="ell_Y">&nbsp;&nbsp;y1: </label><input id="ell_Y" type="number" step="1" value="">
+        </p>
+        <p style="color: green">
+        <label for="ell_a">&nbsp;&nbsp;&nbsp;&nbsp;Ellipse Components - A: </label><input id="ell_a" type="number" step="1" value="">
+        <label for="ell_b">&nbsp;&nbsp;B: </label><input id="ell_b" type="number" step="1" value="">
+        </p>
+        <button id="create_MP_Ellipse" onclick="mp_ellipse()">Create Ellipse</button><br>
+        <br>
+
+        <h3>Bezier/Hermite/B-Spline Curve:</h3>
+        <p style="color: dodgerblue">&nbsp;
+            <label for="c_X1">&nbsp;&nbsp;x1: </label><input id="c_X1" type="number" step="1" value="">
+            <label for="c_Y1">&nbsp;&nbsp;y1: </label><input id="c_Y1" type="number" step="1" value="">
+        </p>
+        <p style="color: green">&nbsp;
+            <label for="c_X2">&nbsp;&nbsp;x2: </label><input id="c_X2" type="number" step="1" value="">
+            <label for="c_Y2">&nbsp;&nbsp;y2: </label><input id="c_Y2" type="number" step="1" value="">
+        </p>
+        <p style="color: deeppink">&nbsp;
+            <label for="c_X3">&nbsp;&nbsp;x3: </label><input id="c_X3" type="number" step="1" value="">
+            <label for="c_Y3">&nbsp;&nbsp;y3: </label><input id="c_Y3" type="number" step="1" value="">
+        </p>
+        <p style="color: purple">&nbsp;
+            <label for="c_X4">&nbsp;&nbsp;x4: </label><input id="c_X4" type="number" step="1" value="">
+            <label for="c_Y4">&nbsp;&nbsp;y4: </label><input id="c_Y4" type="number" step="1" value="">
+        </p>
+        <p style="color: Red">&nbsp;
+            <label for="curve_n">&nbsp;&nbsp;N: </label><input id="curve_n" type="number" step="1" value="">
+            &nbsp;&nbsp;(You may leave N empty. Default Value:100)
+        </p>
+        <button id="create_Bezier" onclick="bezier()">Create Bezier</button>
+        <button id="create_Hermite" onclick="hermite()">Create Hermite</button>
+        <button id="create_B_Spline" onclick="b_spline()">Create B-Spline</button><br>
+        <br>
+    </body>
+</html>
+
