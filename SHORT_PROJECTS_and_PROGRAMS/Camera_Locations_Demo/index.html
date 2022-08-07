@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<p> </p>
+
+<h1>3D MODEL: House</h1>
+<h3>Changes in Camera Locations - Demonstration</h3>
+<div id="text_boxes">
+  <p style=" color: red"> Important:
+    <br> x and y values must be between -1.0 and 1.0 <br>
+    z values must be between 5.0 and 8.0<br>
+    If nothing appears than click "Start New" button and try again.
+  </p>
+
+  <button id="refresh" onclick="location.reload()">Start New</button>
+
+  <p style="color: dodgerblue">  Start &nbsp;-
+    <label for="x1">&nbsp;&nbsp;x1: </label><input id="x1" type="number" min="-1" max="1" step=".1" value="">
+    <label for="y1">&nbsp;&nbsp;y1: </label><input id="y1" type="number" min="-1" max="1" step=".1" value="">
+    <label for="z1">&nbsp;&nbsp;z1: </label><input id="z1" type="number" min="5" max="8" step=".1" value="">
+  </p>
+
+
+  <p style="color: green">  End &nbsp;&nbsp;-
+    <label for="x2">&nbsp;&nbsp;x2: </label><input id="x2" type="number" min="-1" max="1" step=".1" value="">
+    <label for="y2">&nbsp;&nbsp;y2: </label><input id="y2" type="number" min="-1" max="1" step=".1" value="">
+    <label for="z2">&nbsp;&nbsp;z2: </label><input id="z2" type="number" min="5" max="8" step=".1" value=""> </p>
+
+  <p> </p>
+  <button id="animate_button">Animate (Normal Speed)</button>
+  <button id="animate_button2">Animate (High Speed)</button>
+  <br><br>
+
+  <br><br>
+  <div>
+    ZOOM:&ensp;&nbsp;&nbsp; (+)<input id="fovSlider" type="range" min="5" max="85" step="1" value="45" />(-)
+  </div>
+  <br>
+</div>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+
+attribute  vec4 vPosition;
+attribute  vec4 vColor;
+varying vec4 fColor;
+
+uniform mat4 modelViewMatrix;
+uniform mat4 projectionMatrix;
+
+void main()
+{
+    gl_Position = projectionMatrix*modelViewMatrix*vPosition;
+    fColor = vColor;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+
+#ifdef GL_ES
+precision highp float;
+#endif
+
+
+varying vec4 fColor;
+
+void
+main()
+{
+    gl_FragColor = fColor;
+}
+</script>
+
+<script type="text/javascript" src="Common/webgl-utils.js"></script>
+<script type="text/javascript" src="Common/initShaders.js"></script>
+<script type="text/javascript" src="Common/MV.js"></script>
+<script type="text/javascript" src="new_house.js"></script>
+
+<body>
+<canvas id="gl-canvas" width="700" height="700" style="border: solid">
+  Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+
+</body>
+</html>
